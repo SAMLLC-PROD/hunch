@@ -1,0 +1,25 @@
+{
+  "domains": {
+    "house": {
+      "label": "House",
+      "signals": ["cold snap", "first freeze", "getting ready for winter", "hard frost", "heating bill",
+                  "house feels cold", "snow storm", "pipes", "leaving town for the holidays"]
+    },
+    "car": {
+      "signals": ["road trip", "long drive", "check engine light", "snow driving", "cold snap"]
+    },
+    "insurance": {
+      "signals": ["hail storm", "storm damage", "cracked windshield", "tree fell", "burst pipe", "file a claim",
+                  "leaving town for the holidays"]
+    },
+    "pets": {
+      "label": "Biscuit (dog)",
+      "signals": ["going on vacation", "leaving town for the holidays", "treats", "the dog"]
+    },
+    "auto-beds-tomatoes": {
+      "label": "Garden",
+      "signals": ["first frost", "cold snap", "hard frost", "what to plant"]
+    }
+  },
+  "settings": {"max_passages": 8, "provider": "", "model": ""}
+}

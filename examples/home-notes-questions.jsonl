@@ -1,0 +1,11 @@
+# Oblique questions: each names a situation, not the document. "expect" is part of the right file's path.
+{"question": "we're getting a cold snap this weekend, what should I do?", "expect": "plumbing"}
+{"question": "first hard frost is forecast for tonight", "expect": "garden"}
+{"question": "a hail storm just rolled through and dented everything", "expect": "home-policy"}
+{"question": "we're leaving town for the holidays, anything to line up?", "expect": "biscuit"}
+{"question": "the house feels cold and the heat keeps turning on and off", "expect": "furnace"}
+{"question": "can I give the dog a chicken jerky treat?", "expect": "biscuit"}
+{"question": "what oil does the outback take?", "expect": "maintenance-log"}
+{"question": "snow is coming, is the car ready for snow driving?", "expect": "tires"}
+{"question": "a tree branch cracked the windshield, is that covered?", "expect": "auto-policy"}
+{"question": "ice keeps building up on the edge of the roof", "expect": "roof"}

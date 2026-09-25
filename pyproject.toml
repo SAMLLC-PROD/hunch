@@ -1,0 +1,30 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hunch-ai"
+version = "0.1.1"
+description = "Give your AI a hunch about which of your documents matter, even when you don't mention them. Works with Claude, Grok, Hermes, OpenClaw and any MCP client."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+keywords = ["rag", "mcp", "claude", "grok", "retrieval", "knowledge", "notes", "hermes", "openclaw"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["mcp>=1.10"]
+
+[project.optional-dependencies]
+pdf = ["pypdf>=4"]
+dev = ["pytest>=8"]
+
+[project.scripts]
+hunch = "hunch.cli:main"
+hunch-mcp = "hunch.mcp_server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/hunch"]
