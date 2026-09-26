@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "hunch-ai"
+name = "samllc-hunch"
 version = "0.1.1"
 description = "Give your AI a hunch about which of your documents matter, even when you don't mention them. Works with Claude, Grok, Hermes, OpenClaw and any MCP client."
 readme = "README.md"

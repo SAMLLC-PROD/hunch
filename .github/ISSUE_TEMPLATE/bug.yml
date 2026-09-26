@@ -1,0 +1,41 @@
+name: Bug
+description: Hunch failed, crashed, or did the wrong thing.
+title: "[bug] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: What you ran, and what you saw. Paste the error text.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: dropdown
+    id: how
+    attributes:
+      label: How you are using it
+      options:
+        - Terminal (hunch chat / hunch ask)
+        - Hermes
+        - Claude Desktop or Claude Code
+        - OpenClaw
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: os
+    attributes:
+      label: Operating system
+      placeholder: Windows 11, macOS, Ubuntu...
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |
+        Do not paste API keys or private documents.

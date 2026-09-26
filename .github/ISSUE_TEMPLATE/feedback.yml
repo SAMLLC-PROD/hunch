@@ -1,0 +1,24 @@
+name: Feedback
+description: You tried Hunch and have a note, a question, or an idea.
+title: "[feedback] "
+labels: ["feedback"]
+body:
+  - type: textarea
+    id: note
+    attributes:
+      label: What should we know
+      description: Did it help? Where did it miss? What would make you keep using it?
+    validations:
+      required: true
+  - type: dropdown
+    id: how
+    attributes:
+      label: How you tried it
+      options:
+        - Not yet, just reading
+        - Terminal
+        - Hermes
+        - Claude
+        - Other
+    validations:
+      required: true

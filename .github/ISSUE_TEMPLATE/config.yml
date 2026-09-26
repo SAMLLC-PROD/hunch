@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security problem
+    url: https://github.com/SAMLLC-PROD/hunch/blob/main/SECURITY.md
+    about: Email the address in SECURITY.md. Do not file exploit detail here.
+  - name: Question that is not a bug
+    url: https://github.com/SAMLLC-PROD/hunch/discussions
+    about: Trying it, ideas, and "would this work for me" belong in Discussions.

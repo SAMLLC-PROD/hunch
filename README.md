@@ -55,9 +55,11 @@ pipx install git+https://github.com/SAMLLC-PROD/hunch
 # or: pip install git+https://github.com/SAMLLC-PROD/hunch
 ```
 
-The repo is private for now. `pipx` / `pip` need a GitHub login that can read `SAMLLC-PROD/hunch`.
+Install from that git URL. The command you run is still `hunch`.
 
-For PDF support add the extra: `pipx install "hunch-ai[pdf] @ git+https://github.com/SAMLLC-PROD/hunch"`.
+Do not `pip install hunch-ai` or `pip install hunch`. Those names on PyPI are other projects.
+
+For PDF support add the extra: `pipx install "samllc-hunch[pdf] @ git+https://github.com/SAMLLC-PROD/hunch"`.
 
 ## Five-minute start
 
@@ -198,7 +200,10 @@ Claude Sonnet 5 rejects a custom `temperature`. Hunch does not send one on the A
 - When you chat, enrich, or check, only the selected passages (plus your message) go to
   the AI provider you configured. `enrich` sends short samples from each area.
 - When used through an app via MCP, the app's own AI sees the passages Hunch returns.
-- `watch` downloads only the URLs you give it.
+- `watch` downloads only the URLs you give it, and only when you run `hunch watch`.
+- Hunch does not contact SpaceAutomationMachines, Lattice, or any other server of ours.
+- The default MCP mode is a local process. Do not point `hunch mcp --http` at a public
+  address. That mode has no password.
 
 ## How it works
 
@@ -247,6 +252,18 @@ Every command accepts `--root <folder>`, or run it from inside the folder.
 - HTTP mode has no authentication yet.
 - Very large collections (tens of thousands of files) will index slowly. Hunch is aimed at
   personal and team-sized folders.
+
+## Support
+
+GitHub is the support desk. There is no separate help line and no same-day promise.
+One person reads these.
+
+- Something broke, or you cannot get it working: [open a bug](https://github.com/SAMLLC-PROD/hunch/issues/new?template=bug.yml).
+- You tried it and have a question or an idea: [open feedback](https://github.com/SAMLLC-PROD/hunch/issues/new?template=feedback.yml), or start a [Discussion](https://github.com/SAMLLC-PROD/hunch/discussions).
+- A security problem: email spaceautomationmachinesLLC@gmail.com. Do not put exploit detail in a public issue.
+
+Include what you ran, the error text, your OS, and whether you used the terminal or Hermes.
+Do not paste API keys, and do not paste private documents.
 
 ## Contributing
 
